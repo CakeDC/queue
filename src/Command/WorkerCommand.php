@@ -20,6 +20,7 @@ use Cake\Command\Command;
 use Cake\Console\Arguments;
 use Cake\Console\ConsoleIo;
 use Cake\Console\ConsoleOptionParser;
+use Cake\Console\Shell;
 use Cake\Core\Configure;
 use Cake\Log\Log;
 use Cake\Queue\Consumption\QueueExtension;
@@ -31,7 +32,7 @@ use Psr\Log\NullLogger;
 /**
  * Worker command.
  */
-class WorkerCommand extends Command
+class WorkerCommand extends Shell
 {
     /**
      * Gets the option parser instance and configures it.

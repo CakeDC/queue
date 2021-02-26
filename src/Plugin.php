@@ -58,7 +58,7 @@ class Plugin extends BasePlugin
      * @param \Cake\Console\CommandCollection $commands The command collection to update
      * @return \Cake\Console\CommandCollection
      */
-    public function console(CommandCollection $commands): CommandCollection
+    public function console($commands)
     {
         return $commands->add('worker', WorkerCommand::class);
     }
